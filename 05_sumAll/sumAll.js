@@ -1,6 +1,15 @@
 const sumAll = function(firstNumber, lastNumber) {
   let sum = 0;
-  for (let i = firstNumber; i <= lastNumber; i++) {
+  let highNumber;
+  let lowNumber;
+  if (firstNumber > lastNumber) {
+    highNumber = firstNumber;
+    lowNumber = lastNumber;    
+  } else {
+    highNumber = lastNumber;
+    lowNumber = firstNumber;
+  }
+  for (let i = lowNumber; i <= highNumber; i++) {
     sum += i;
   }
   return sum;
