@@ -1,5 +1,9 @@
 const removeFromArray = function(array, itemRemoved) {
-  array.splice(array.indexOf(itemRemoved), 1);
+  const argLength = arguments.length;
+  for (i = 1; i <=argLength - 1; i++) {
+    array.splice(array.indexOf(arguments[i]), 1);
+  }
+  
   return array;
 };
 
