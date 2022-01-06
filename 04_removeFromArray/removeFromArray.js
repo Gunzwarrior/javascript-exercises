@@ -1,4 +1,4 @@
-const removeFromArray = function(array, itemRemoved) {
+const removeFromArray = function(array) {
   const argLength = arguments.length;
   for (i = 1; i <=argLength - 1; i++) {
     if (array.indexOf(arguments[i]) !== -1) {
