@@ -1,5 +1,5 @@
 const ftoc = function(temp) {
-  return temp = (temp - 32) / 1.8;
+  return temp = Math.round(((temp - 32) / 1.8) * 10) / 10;
 };
 
 const ctof = function() {
