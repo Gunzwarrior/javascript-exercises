@@ -3,7 +3,7 @@ const ftoc = function(temp) {
 };
 
 const ctof = function(temp) {
-  return temp = temp * 1.8 + 32;
+  return temp = Math.round((temp * 1.8 + 32) * 10) / 10;
 };
 
 // Do not edit below this line
