@@ -1,7 +1,6 @@
 const fibonacci = function(number) {
-  if (number < 0) {
-    return "OOPS";
-  }
+  if (number < 0) return "OOPS";
+  if (number === 0) return 0;
   let array = [1, 1];
   let newNumber;
   for (let i = 0; i <= number; i++) {
