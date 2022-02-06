@@ -1,5 +1,6 @@
 const palindromes = function (phrase) {
-  let arrayPhrase = phrase.split("");
+  let lowerCasedPhrase = phrase.toLowerCase();
+  let arrayPhrase = lowerCasedPhrase.split("");
   let filteredArrayPhrase = arrayPhrase.filter((element) => {
     if (element === "!" || element === "." || element === ","
         || element === " ") {
